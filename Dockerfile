@@ -32,3 +32,4 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
 COPY build/libs/cxgo/*.jar cx-flow.jar
 ENTRYPOINT ["java", "-Xms512m", "-Xmx2048m", "-Djava.security.egd=file:/dev/./urandom", "-Dspring.profiles.active=cxgo", "-jar", "cx-flow.jar"]
 EXPOSE 8080
+
